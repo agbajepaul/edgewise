@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Edgewise — graph learning daily</title>
+<meta name="theme-color" content="#1A2321">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Edgewise">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0EB; --panel:#F8F9F6; --ink:#1A2321; --ink-2:#55615C; --rule:#CDD3CE;
+  --heat:#2F5BD3; --heat-hot:#C0306A; --cool:#2E7D5B; --cool-soft:#DCEBE3; --seg-off:#C9D0CB;
+  --focus:#2F5BD3;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181A; --panel:#1C2224; --ink:#E7ECEA; --ink-2:#9CA9A4; --rule:#2D3634;
+    --heat:#7C9BFF; --heat-hot:#F06A9C; --cool:#6CCB9F; --cool-soft:#1E322A; --seg-off:#34403D;
+    --focus:#7C9BFF; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14181A; --panel:#1C2224; --ink:#E7ECEA; --ink-2:#9CA9A4; --rule:#2D3634;
+    --heat:#7C9BFF; --heat-hot:#F06A9C; --cool:#6CCB9F; --cool-soft:#1E322A; --seg-off:#34403D;
+    --focus:#7C9BFF; color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--cool)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 64px}
+
+/* Masthead */
+.mast{display:grid;grid-template-columns:1fr auto;gap:12px 24px;align-items:end;
+  border-bottom:3px solid var(--ink);padding-bottom:14px;margin-bottom:28px}
+.mast h1{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:700;
+  font-size:clamp(2.8rem,8vw,5rem);line-height:.95;margin:0;letter-spacing:-.02em;font-style:italic}
+.mast .tag{font-size:1rem;color:var(--ink-2);margin:6px 0 0;max-width:46ch}
+.stamp{text-align:right;font-size:.9rem;color:var(--ink-2)}
+.stamp strong{display:block;font-family:"Newsreader",Georgia,"Times New Roman",serif;
+  font-size:1.6rem;color:var(--ink);font-weight:600;line-height:1.1}
+
+/* Layout */
+.grid{display:grid;grid-template-columns:300px 1fr;gap:36px}
+@media (max-width:880px){.grid{grid-template-columns:1fr;gap:24px}}
+aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);align-self:start}
+@media (max-width:880px){aside{position:static}}
+
+.brief{background:var(--panel);border-left:4px solid var(--heat);padding:16px 18px;margin-bottom:24px}
+.brief h2{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-size:1.35rem;margin:0 0 6px;font-weight:600}
+.brief p{margin:0;font-size:.95rem}
+
+.ctl h3{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:600;font-size:1.1rem;margin:0 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.chip{font:inherit;font-size:.86rem;padding:5px 11px;border-radius:999px;border:1px solid var(--rule);
+  background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:6px;overflow:hidden;margin-bottom:20px}
+.seg button{font:inherit;font-size:.86rem;padding:6px 12px;border:0;background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--cool);color:var(--paper)}
+.minheat{width:100%;accent-color:var(--heat)}
+.minlabel{display:flex;justify-content:space-between;font-size:.86rem;color:var(--ink-2);margin-bottom:20px}
+.howto{font-size:.88rem;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:14px}
+.howto code{font-family:inherit;background:var(--cool-soft);color:var(--ink);padding:1px 5px;border-radius:3px}
+
+/* Feed */
+.feedhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.feedhead h2{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-size:1.6rem;margin:0;font-weight:600}
+.count{color:var(--ink-2);font-size:.9rem}
+.daygroup{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:500;font-size:1.05rem;
+  color:var(--ink-2);margin:26px 0 4px;padding-bottom:4px;border-bottom:1px solid var(--rule)}
+
+.story{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.story.top{background:linear-gradient(90deg,color-mix(in srgb,var(--heat) 9%,transparent),transparent 60%);
+  margin:0 -14px;padding-left:14px;padding-right:14px}
+@media (max-width:520px){.story{grid-template-columns:52px 1fr;gap:12px}.sig{width:52px;height:52px}}
+
+/* Signal glyph: a little message-passing graph that lights up */
+.sig{display:block;width:64px;height:64px}
+.sig .e{stroke:var(--seg-off);stroke-width:1.4}
+.sig .e.on{stroke:var(--heat);stroke-width:2}
+.sig .n{fill:var(--panel);stroke:var(--seg-off);stroke-width:1.5}
+.sig .n.on{fill:var(--heat);stroke:var(--heat)}
+.sig.hot .e.on{stroke:var(--heat-hot)}
+.sig.hot .n.on{fill:var(--heat-hot);stroke:var(--heat-hot)}
+.sig .c{fill:var(--ink)}
+.tachnum{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:1.6rem;line-height:1;text-align:center;margin-top:2px}
+.tachnum.red{color:var(--heat-hot)}
+
+.story h3{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:600;font-size:1.5rem;
+  line-height:1.12;margin:0 0 4px}
+.story h3 a{color:var(--ink);text-decoration:none}
+.story h3 a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.meta{font-size:.86rem;color:var(--ink-2);margin-bottom:10px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.cat{color:var(--cool);font-weight:500}
+.sum{margin:0 0 10px;max-width:72ch}
+.why{margin:0 0 10px;max-width:72ch;font-size:.95rem}
+.why b{font-weight:600}
+.angle{background:var(--cool-soft);border-radius:6px;padding:10px 14px;max-width:72ch;font-size:.95rem}
+.angle b{color:var(--cool);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:.88rem;padding:6px 12px;border-radius:6px;border:1px solid var(--rule);
+  background:var(--panel);color:var(--ink);cursor:pointer}
+.btn:hover{border-color:var(--ink-2)}
+.btn.star[aria-pressed="true"]{border-color:var(--heat);color:var(--heat)}
+.btn:disabled{opacity:.55;cursor:default}
+.empty{padding:40px 0;color:var(--ink-2);max-width:56ch}
+.empty strong{color:var(--ink);display:block;font-family:"Newsreader",Georgia,"Times New Roman",serif;font-size:1.5rem}
+@media (prefers-reduced-motion:no-preference){
+  .sig .on{animation:fill .5s ease-out both}
+  @keyframes fill{from{opacity:0}to{opacity:1}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <h1>Edgewise</h1>
+      <p class="tag">Graph learning every morning: GNNs and their neighbors, plus every security and privacy story involving graphs.</p>
+    </div>
+    <div class="stamp" id="stamp"><strong>—</strong>Loading the feed</div>
+  </header>
+
+  <div class="grid">
+    <aside>
+      <section class="brief" id="brief" hidden>
+        <h2>Today’s read</h2>
+        <p id="briefText"></p>
+      </section>
+
+      <div class="ctl">
+        <h3>Sort</h3>
+        <div class="seg" role="group" aria-label="Sort items">
+          <button type="button" data-sort="date" aria-pressed="true">Newest</button>
+          <button type="button" data-sort="heat" aria-pressed="false">Strongest signal</button>
+        </div>
+
+        <h3>Show</h3>
+        <div class="chips" id="cats" role="group" aria-label="Filter by topic"></div>
+
+        <h3><label for="minheat">Minimum signal</label></h3>
+        <input type="range" id="minheat" class="minheat" min="1" max="10" value="1">
+        <div class="minlabel"><span>Everything</span><span id="minval">1+</span><span>Top tier</span></div>
+
+        <div class="chips">
+          <button type="button" class="chip" id="starOnly" aria-pressed="false">Starred only</button>
+        </div>
+
+        <div class="howto">
+          <p style="margin:0">New papers arrive every weekday morning, with news and library releases in between. Use <b>Copy brainstorm prompt</b> on any paper and paste it into Claude to turn it into project ideas.</p>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="feedhead">
+        <h2>The feed</h2>
+        <span class="count" id="count"></span>
+      </div>
+      <div id="feed" aria-live="polite"></div>
+    </main>
+  </div>
+</div>
+
+<script>
+(function(){
+  const state = { stories: [], sort: "date", cat: "All", minHeat: 1, starOnly: false, stars: new Set() };
+
+  // Per-viewer conveniences
+  function loadLocal(){
+    try { const s = JSON.parse(localStorage.getItem("edgewise-stars") || "[]"); state.stars = new Set(s); } catch(e){}
+  }
+  function saveStars(){ try { localStorage.setItem("edgewise-stars", JSON.stringify([...state.stars])); } catch(e){} }
+  loadLocal();
+
+  const el = id => document.getElementById(id);
+  const fmtDate = iso => {
+    if(!iso) return "";
+    const d = new Date(iso + "T12:00:00");
+    if (isNaN(d)) return iso;
+    return d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+  };
+  const monthKey = iso => {
+    const d = new Date(iso + "T12:00:00");
+    if (isNaN(d)) return "Undated";
+    const now = new Date();
+    const days = Math.floor((now - d)/86400000);
+    if (days <= 7) return "This week";
+    if (days <= 31) return "Earlier this month";
+    return d.toLocaleDateString(undefined,{month:"long",year:"numeric"});
+  };
+
+  function tach(heat){
+    const h = Math.max(1, Math.min(10, Math.round(heat || 1)));
+    const NS = "http://www.w3.org/2000/svg";
+    const wrap = document.createElement("div");
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 64 64"); svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("class", "sig" + (h >= 8 ? " hot" : ""));
+    const pts = [];
+    for (let i = 0; i < 10; i++){
+      const a = -Math.PI/2 + i * (2*Math.PI/10);
+      pts.push([32 + 25*Math.cos(a), 32 + 25*Math.sin(a)]);
+    }
+    const line = (x1,y1,x2,y2,on,delay)=>{
+      const l = document.createElementNS(NS,"line");
+      l.setAttribute("x1",x1); l.setAttribute("y1",y1); l.setAttribute("x2",x2); l.setAttribute("y2",y2);
+      l.setAttribute("class","e"+(on?" on":"")); if (on) l.style.animationDelay = delay+"ms";
+      svg.appendChild(l);
+    };
+    for (let i = 0; i < 10; i++){
+      const j = (i+1) % 10;
+      line(pts[i][0],pts[i][1],pts[j][0],pts[j][1], i+1 < h, i*35);
+      line(32,32,pts[i][0],pts[i][1], i < h, i*35);
+    }
+    pts.forEach((p,i)=>{
+      const c = document.createElementNS(NS,"circle");
+      c.setAttribute("cx",p[0]); c.setAttribute("cy",p[1]); c.setAttribute("r",4.2);
+      c.setAttribute("class","n"+(i < h ? " on" : "")); if (i < h) c.style.animationDelay = (i*35)+"ms";
+      svg.appendChild(c);
+    });
+    const core = document.createElementNS(NS,"circle");
+    core.setAttribute("cx",32); core.setAttribute("cy",32); core.setAttribute("r",3.2); core.setAttribute("class","c");
+    svg.appendChild(core);
+    const n = document.createElement("div"); n.className = "tachnum" + (h>=8?" red":"");
+    n.textContent = h; n.setAttribute("aria-label", "Signal " + h + " out of 10");
+    wrap.append(svg, n);
+    return wrap;
+  }
+
+  function renderCats(){
+    const cats = ["All", ...[...new Set(state.stories.map(s=>s.category).filter(Boolean))].sort()];
+    const box = el("cats"); box.textContent = "";
+    cats.forEach(c=>{
+      const b = document.createElement("button");
+      b.type="button"; b.className="chip"; b.textContent=c;
+      b.setAttribute("aria-pressed", String(state.cat===c));
+      b.onclick = ()=>{ state.cat=c; renderCats(); renderFeed(); };
+      box.appendChild(b);
+    });
+  }
+
+  function brainstormPrompt(story){
+    return `Help me turn this graph learning paper or news item into research projects.
+
+Title: ${story.title}
+Authors: ${story.authors || "n/a"}
+Source: ${story.source} (${story.published})
+Link: ${story.url}
+Summary: ${story.summary}
+Why it matters: ${story.whyItMatters || ""}
+Initial angle: ${story.researchAngle || ""}
+
+Propose 3 concrete follow-up research ideas with a security and privacy lens where it fits (attack it, defend it, audit its privacy, test its assumptions, or transfer it to a new graph type): one weekend-scale, one workshop-paper scale, one full-conference scale. For each, give the method, datasets and baselines, what to measure, and the main risk of it not working.`;
+  }
+
+  function storyEl(s, isTop){
+    const art = document.createElement("article"); art.className = "story" + (isTop ? " top" : "");
+    art.appendChild(tach(s.heat));
+    const body = document.createElement("div");
+
+    const h = document.createElement("h3");
+    const a = document.createElement("a"); a.href = s.url || "#"; a.target="_blank"; a.rel="noopener"; a.textContent = s.title;
+    h.appendChild(a);
+
+    const meta = document.createElement("div"); meta.className="meta";
+    const c = document.createElement("span"); c.className="cat"; c.textContent = s.category || "General";
+    const src = document.createElement("span"); src.textContent = s.source || "";
+    const dt = document.createElement("span"); dt.textContent = fmtDate(s.published);
+    meta.append(c, src, dt);
+    if (s.authors){
+      const au = document.createElement("span");
+      const list = s.authors.split(/,\s*/);
+      au.textContent = list.length > 3 ? list.slice(0,3).join(", ") + " et al." : s.authors;
+      meta.appendChild(au);
+    }
+
+    const sum = document.createElement("p"); sum.className="sum"; sum.textContent = s.summary || "";
+    body.append(h, meta, sum);
+
+    if (s.whyItMatters){
+      const w = document.createElement("p"); w.className="why";
+      const b = document.createElement("b"); b.textContent = "Why it matters: ";
+      w.append(b, document.createTextNode(s.whyItMatters)); body.appendChild(w);
+    }
+    if (s.researchAngle){
+      const r = document.createElement("div"); r.className="angle";
+      const b = document.createElement("b"); b.textContent = "Research angle: ";
+      r.append(b, document.createTextNode(s.researchAngle)); body.appendChild(r);
+    }
+
+    const acts = document.createElement("div"); acts.className="actions";
+    const star = document.createElement("button"); star.type="button"; star.className="btn star";
+    const starred = state.stars.has(s.id);
+    star.setAttribute("aria-pressed", String(starred));
+    star.textContent = starred ? "★ Starred" : "☆ Star";
+    star.onclick = ()=>{
+      if (state.stars.has(s.id)) state.stars.delete(s.id); else state.stars.add(s.id);
+      saveStars();
+      const on = state.stars.has(s.id);
+      star.setAttribute("aria-pressed", String(on)); star.textContent = on ? "★ Starred" : "☆ Star";
+      if (state.starOnly) renderFeed();
+    };
+    acts.appendChild(star);
+
+    const cp = document.createElement("button"); cp.type="button"; cp.className="btn";
+    cp.textContent = "Copy brainstorm prompt";
+    cp.onclick = async ()=>{
+      try { await navigator.clipboard.writeText(brainstormPrompt(s)); cp.textContent = "Copied. Paste it into Claude"; }
+      catch(_) { cp.textContent = "Copy failed"; }
+      setTimeout(()=>{ cp.textContent = "Copy brainstorm prompt"; }, 2500);
+    };
+    acts.appendChild(cp);
+    body.append(acts);
+
+    art.appendChild(body);
+    return art;
+  }
+
+  function renderFeed(){
+    const feed = el("feed"); feed.textContent = "";
+    let list = state.stories.filter(s =>
+      (state.cat==="All" || s.category===state.cat) &&
+      (Number(s.heat)||0) >= state.minHeat &&
+      (!state.starOnly || state.stars.has(s.id)));
+    if (state.sort==="heat") list.sort((a,b)=>(b.heat-a.heat) || String(b.published).localeCompare(String(a.published)));
+    else list.sort((a,b)=>String(b.published).localeCompare(String(a.published)) || (b.heat-a.heat));
+
+    el("count").textContent = list.length + (list.length===1 ? " item" : " items");
+
+    if (!state.stories.length){
+      feed.innerHTML = "";
+      const d = document.createElement("div"); d.className="empty";
+      const s = document.createElement("strong"); s.textContent = "Nothing here yet";
+      d.append(s, document.createTextNode("The first daily run hasn’t happened yet. Run the “Daily digest” workflow from your repo’s Actions tab."));
+      feed.appendChild(d); return;
+    }
+    if (!list.length){
+      const d = document.createElement("div"); d.className="empty";
+      d.textContent = "Nothing matches these filters. Lower the minimum heat or pick another topic.";
+      feed.appendChild(d); return;
+    }
+
+    const maxHeat = Math.max(...list.map(s=>Number(s.heat)||0));
+    if (state.sort==="date"){
+      let current = null;
+      list.forEach(s=>{
+        const k = monthKey(s.published);
+        if (k!==current){ current=k; const g=document.createElement("div"); g.className="daygroup"; g.textContent=k; feed.appendChild(g); }
+        feed.appendChild(storyEl(s, Number(s.heat)>=9));
+      });
+    } else {
+      list.forEach((s)=> feed.appendChild(storyEl(s, Number(s.heat)===maxHeat && maxHeat>=8)));
+    }
+  }
+
+  // Controls
+  document.querySelectorAll("[data-sort]").forEach(b=>{
+    b.onclick = ()=>{
+      state.sort = b.dataset.sort;
+      document.querySelectorAll("[data-sort]").forEach(x=>x.setAttribute("aria-pressed", String(x===b)));
+      renderFeed();
+    };
+  });
+  el("minheat").oninput = e => { state.minHeat = Number(e.target.value); el("minval").textContent = state.minHeat + "+"; renderFeed(); };
+  el("starOnly").onclick = e => { state.starOnly = !state.starOnly; e.currentTarget.setAttribute("aria-pressed", String(state.starOnly)); renderFeed(); };
+  renderCats(); renderFeed();
+
+  // Load data
+  async function load(){
+    try {
+      const r = await fetch("data/stories.json", { cache: "no-cache" });
+      if (!r.ok) throw new Error(r.status);
+      const d = await r.json();
+      state.stories = Array.isArray(d.stories) ? d.stories : [];
+      if (d.briefing){ el("brief").hidden = false; el("briefText").textContent = d.briefing; }
+      const st = el("stamp"); st.textContent = "";
+      const b = document.createElement("strong"); b.textContent = fmtDate(d.lastUpdated) || "—";
+      st.append(b, document.createTextNode("Last refreshed"));
+    } catch(e){
+      const st = el("stamp"); st.textContent = "";
+      const b = document.createElement("strong"); b.textContent = "Offline";
+      st.append(b, document.createTextNode("Couldn’t load the digest. Check your connection and reload"));
+    }
+    renderCats(); renderFeed();
+  }
+  load();
+
+  if ("serviceWorker" in navigator){
+    window.addEventListener("load", ()=>{ navigator.serviceWorker.register("sw.js").catch(()=>{}); });
+  }
+})();
+</script>
+</body>
+</html>

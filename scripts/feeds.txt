@@ -1,0 +1,28 @@
+# One feed per line:  Name | URL
+# Items are kept if they mention a GNN term (general lane), or any graph term
+# together with a security/privacy term (security & privacy lane).
+# Prefix a name with * to keep every item from that feed (e.g. library releases).
+# Feeds that fail to load are skipped, so it's safe to experiment.
+
+# arXiv (the main source: new papers every weekday)
+arXiv cs.LG | https://rss.arxiv.org/rss/cs.LG
+arXiv cs.CR | https://rss.arxiv.org/rss/cs.CR
+arXiv cs.SI | https://rss.arxiv.org/rss/cs.SI
+arXiv stat.ML | https://rss.arxiv.org/rss/stat.ML
+arXiv cs.AI | https://rss.arxiv.org/rss/cs.AI
+# Broader sources for the security & privacy lane (DP graph release, recommender
+# poisoning, GraphRAG attacks); non-security graph papers from these are filtered out
+arXiv cs.DB | https://rss.arxiv.org/rss/cs.DB
+arXiv cs.IR | https://rss.arxiv.org/rss/cs.IR
+arXiv cs.CL | https://rss.arxiv.org/rss/cs.CL
+arXiv cs.DS | https://rss.arxiv.org/rss/cs.DS
+
+# Library releases
+*PyTorch Geometric releases | https://github.com/pyg-team/pytorch_geometric/releases.atom
+*DGL releases | https://github.com/dmlc/dgl/releases.atom
+
+# News and blogs (filtered to GNN stories)
+Google News | https://news.google.com/rss/search?q=%22graph+neural+network%22+when:7d&hl=en-US&gl=US&ceid=US:en
+Google News | https://news.google.com/rss/search?q=%22graph+neural+network%22+security+OR+fraud+OR+privacy+when:7d&hl=en-US&gl=US&ceid=US:en
+Google News | https://news.google.com/rss/search?q=%22graph+foundation+model%22+OR+%22graph+transformer%22+when:7d&hl=en-US&gl=US&ceid=US:en
+Google News | https://news.google.com/rss/search?q=GraphRAG+OR+%22knowledge+graph%22+poisoning+OR+attack+OR+privacy+when:7d&hl=en-US&gl=US&ceid=US:en

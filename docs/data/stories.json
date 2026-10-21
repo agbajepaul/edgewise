@@ -1,6 +1,6 @@
 {
  "lastUpdated": "2026-10-21",
- "briefing": "The standout this week is Blackknife, a query-free black-box rewiring attack on heterogeneous GNNs whose degree-preserving edits evade common defenses. Financial crime is the busiest application area, with money-mule and account-takeover detectors showing graph models beating strong tree baselines at bank scale. On the methods side, a RelBench study finds that simple propagation baselines recover much of what heterogeneous GNNs achieve.",
+ "briefing": "No new items today. Below are the latest from previous days.",
  "stories": [
   {
    "id": "1e41e0301101",

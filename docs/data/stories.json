@@ -1,7 +1,20 @@
 {
- "lastUpdated": "2026-10-23",
- "briefing": "24 new items today. Top signal: “Practical Auditing of Differentially Private Graph Release Mechanisms: Methodology, Toolkit, and Case Study” (10/10, Privacy of graph models & data). Busiest topic: Privacy of graph models & data (3).",
+ "lastUpdated": "2026-10-24",
+ "briefing": "1 new item today. Top signal: “Fuzzy Graph Neural Network Sorts Research Papers Using Uncertainty and Trust - Bioengineer.org” (3/10, Applications).",
  "stories": [
+  {
+   "id": "9bf495f7781d",
+   "title": "Fuzzy Graph Neural Network Sorts Research Papers Using Uncertainty and Trust - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDhmVWVPcnFyWU8zakxRV2FmcXFsamdrenZmd0RuRHlYT3IweVFhSmdaZkdVUUstRTBDYVByUnI5TWRudktCYjM5SmZ4d08yX3R6TTdaSXVzZjJxWnNjNEhpTVljajBaaG95Z3RRcGpjZFpzWUFIVkw2el9EX0tHNG1OTkRRVFhoX3VXSEk3Q0laMHNPSDdvZGhFbHlySHJpNUVr?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-10-24",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Fuzzy Graph Neural Network Sorts Research Papers Using Uncertainty and Trust Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "f3847c73930c",
    "title": "Practical Auditing of Differentially Private Graph Release Mechanisms: Methodology, Toolkit, and Case Study",
@@ -1408,6 +1421,7 @@
   "d10c7bcf18ec",
   "5cc1f766ae1f",
   "ed589e9478b9",
-  "9c38afa31603"
+  "9c38afa31603",
+  "9bf495f7781d"
  ]
 }

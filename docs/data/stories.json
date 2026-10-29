@@ -1,7 +1,46 @@
 {
- "lastUpdated": "2026-10-28",
- "briefing": "39 new items today. Top signal: “GraphRAGProv: GraphRAG Meets How-Provenance” (9/10, Graph learning for security & privacy). Busiest topic: Applications (13).",
+ "lastUpdated": "2026-10-29",
+ "briefing": "3 new items today. Top signal: “Graph neural network method boosts detection of rare cyberattacks in imbalanced data - Bioengineer.org” (3/10, Graph learning for security & privacy). Busiest topic: Applications (2).",
  "stories": [
+  {
+   "id": "88db709e12ba",
+   "title": "Graph neural network method boosts detection of rare cyberattacks in imbalanced data - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUWZCWWxzNk1xRGRONWlRVjRkeGlqdE9tUVhGM1lsa0UwX3RvMDB3Tlc4dWhTMWpEc0RJeGtOSFdGd1NXOVEtSHM3NURQSVFYenpra0x4d2RVcnVVT0MxeU96cUplMnJoZ3pHM19Ndk12WDVGMjNCTDdULUtldWh1VzNwcGJZNjdsbnNLMU9zeWlBRDFYVXFKMnZDREU2RkR0OHBNbnhmWXdxSEZuSUE?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-10-29",
+   "category": "Graph learning for security & privacy",
+   "heat": 3,
+   "summary": "Graph neural network method boosts detection of rare cyberattacks in imbalanced data Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "2ee365812c3f",
+   "title": "Gothenburg and Chalmers Researchers Develop Modular Graph Neural Decoder for Surface Code Memory and Lattice Surgery - Quantum Computing Report",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNYlNzd0FpejJJaWNKNHhxU3AxM25NMzBjZGRxeXRzcEJ1alFmOFNrNHYwdGVTdXVvdldqb0JnMGljallMbFBXLVRsSW1fVFVhN2hweUlZQVZQUV8zcVhJOW5reWNXeUNwLXNnd29GRWtMcFh6ZXlpS08ySkJhUXhsYXNEZ2N6YVZ0bVRPVGVZbzFnaWdmRmpyTGx5XzRSUEJEdEUxWkdzTU5fdFNDbXBoNWE0cHdqdHIyV3lsZmpkQzZpcFpnWldRM1F3UVBQMzE0TlhsQVd4aW1tclRtNUlXQ2RpLTBMTE3SAewBQVVfeXFMTUlWRE9pcjBHUFlzU2ZpaU5hd2xDM1pHdlJYS0VlYkhxOEFMRlZPX214djZxem1jYy1DWkUxUURYSnE5Y1hGNW1tTG4yTVZBamZPcUwwSHd3WWhURllJaUZUSjFuR0hMbl9QaGxZTlA0NERWRnNlM0cwcUVTQmJ4SkZNLWd5blU0YTgwNUtUSFlyVEprR3lmbUtTMi1oMExJLTVYN3RQMHpzRk56amRFUFVoLVV5SDBudFlfRzA1RFgyRUVRU054cUlfNFgzSU1VcFBpNWVodWw3V1BCUGtIcmdteEJOaFVvLUprdmE?oc=5",
+   "source": "Quantum Computing Report",
+   "authors": "",
+   "published": "2026-10-29",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Gothenburg and Chalmers Researchers Develop Modular Graph Neural Decoder for Surface Code Memory and Lattice Surgery Quantum Computing Report",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "b6a6d5ebf3eb",
+   "title": "Graph Neural Network Maps Local Brain Aging Across the Cortex in Health and Alzheimer’s Disease - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOC1vZ05VV2ZhOTczRlB3bHFjUUpISVdocGE3OHBPS3U1S1lMUmdOa3IzTTktbWVEVGxMR2tBMy1kbkFjRDJmTWJ3aS0tWEtHYm45dHNwdUlWTTNwVlRMSTN4c2g3TWpkanltOVVYTUI4QTFlSy1oanE5TVlFNnNTOF9uZ1h1U01Ud3liUUJGc3VzcHQ5dEJSMUEyMWxNd3FsbXNEWjFBZEZPTlNkYzZYb05JeGRkN2tjVWlZ?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-10-29",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Graph Neural Network Maps Local Brain Aging Across the Cortex in Health and Alzheimer’s Disease Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "2c4e4045b8cd",
    "title": "GraphRAGProv: GraphRAG Meets How-Provenance",
@@ -2528,6 +2567,9 @@
   "429e60877441",
   "b1a5aacc1800",
   "8354771e4913",
-  "3d7265d3b265"
+  "3d7265d3b265",
+  "88db709e12ba",
+  "2ee365812c3f",
+  "b6a6d5ebf3eb"
  ]
 }

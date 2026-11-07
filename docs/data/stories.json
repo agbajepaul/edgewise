@@ -1,7 +1,20 @@
 {
- "lastUpdated": "2026-11-06",
- "briefing": "24 new items today. Top signal: “A Locally Tokenized Generative Model for Robust Time-Series Watermarking” (8/10, Attacks on graph models). Busiest topic: Applications (9).",
+ "lastUpdated": "2026-11-07",
+ "briefing": "2 new items today. Top signal: “Video: Neo4j and IBM Announce OEM Partnership for GraphRAG, Context Layers, & Enterprise AI - Neo4j” (5/10, Knowledge graphs & GraphRAG).",
  "stories": [
+  {
+   "id": "950ec1571c0f",
+   "title": "Phase Normalization Enhances Graph Neural Network Accuracy in Hand Gesture Recognition - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZDBxeXhsa2Uzb1BJeHB3OTJ3Tm83aWMycWprZXFCeXE2M2o3NlRmeWwxYTgwS0p1Y3lCUjJfUk5FRDF6WHVwRkFvZUY0cEhQYUU5UVVIejRVeGQ2TTYtbU9xendPTFlqYTFRLXFqZWtZMG9nTzlmdHZaa3ZVRWdVMDVPNmtERzlZTnloem5mNi10OFFvT0ZETXdKbGVMVk5JU0t0TmR0RWh1d2F0dWp3OQ?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-07",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Phase Normalization Enhances Graph Neural Network Accuracy in Hand Gesture Recognition Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "771db753e53d",
    "title": "A Locally Tokenized Generative Model for Robust Time-Series Watermarking",
@@ -64,6 +77,19 @@
    "category": "Benchmarks & datasets",
    "heat": 5,
    "summary": "Understanding the reasoning behind deep learning model predictions is crucial in cheminformatics and drug discovery, where molecular design determines their properties. However, current evaluation frameworks for Explainable AI (XAI) in this domain often rely on artificial datasets or simplified tasks, employing data-derived metrics that fail to capture the complexity of real-world scenarios and lack a direct link to ",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "64f5ef1ecbec",
+   "title": "Video: Neo4j and IBM Announce OEM Partnership for GraphRAG, Context Layers, & Enterprise AI - Neo4j",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYlh3Ty1UX05YV09vd0M0by1XT3RtZWR5RlpjSFFPUzhzSmtyZGNxWEpzdHVwY2ZQMlBNODZnbG01Nl9USjg4N2tFSVlTenQyMV9qeVM3a0ZYVm02eEw4VldtOWZkYzZwNjQycDFLSVE0YlU4U29EenZ0ckFmaGw5QzJuRGEwZ0tNV0N5S0p0R2MxZDBTLWdnSlpQaXZPX0N0YnE2aHZhZVJZQQ?oc=5",
+   "source": "Neo4j",
+   "authors": "",
+   "published": "2026-11-06",
+   "category": "Knowledge graphs & GraphRAG",
+   "heat": 5,
+   "summary": "Video: Neo4j and IBM Announce OEM Partnership for GraphRAG, Context Layers, & Enterprise AI Neo4j",
    "whyItMatters": "",
    "researchAngle": ""
   },
@@ -4824,6 +4850,8 @@
   "6d554646d4cf",
   "3de351156f39",
   "2ed686625170",
-  "83b8664a3eba"
+  "83b8664a3eba",
+  "64f5ef1ecbec",
+  "950ec1571c0f"
  ]
 }

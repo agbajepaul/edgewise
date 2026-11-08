@@ -1,7 +1,20 @@
 {
- "lastUpdated": "2026-11-07",
- "briefing": "2 new items today. Top signal: “Video: Neo4j and IBM Announce OEM Partnership for GraphRAG, Context Layers, & Enterprise AI - Neo4j” (5/10, Knowledge graphs & GraphRAG).",
+ "lastUpdated": "2026-11-08",
+ "briefing": "1 new item today. Top signal: “Graph Neural Networks Rely on Classical Structural Heuristics - Bioengineer.org” (3/10, Applications).",
  "stories": [
+  {
+   "id": "cdea3f8b25b6",
+   "title": "Graph Neural Networks Rely on Classical Structural Heuristics - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcnZ6YjVqNUhhYkt5eUVkNGJPQ1AwbXNPeVllS0R6aGRvXzkzdVYxLWhPeGhYVFhvM0ZCelZIZU80YlNBeDVQYVl3b2RGYjJEMkl2cE9IejUxakpMcjluaGp0WU5IaTZaQ1JhNTJpTFpkMXRfN21BckFORzkxUFlmU1V4anhIOTl5RVpGQk9JNA?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-08",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Graph Neural Networks Rely on Classical Structural Heuristics Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "950ec1571c0f",
    "title": "Phase Normalization Enhances Graph Neural Network Accuracy in Hand Gesture Recognition - Bioengineer.org",
@@ -4852,6 +4865,7 @@
   "2ed686625170",
   "83b8664a3eba",
   "64f5ef1ecbec",
-  "950ec1571c0f"
+  "950ec1571c0f",
+  "cdea3f8b25b6"
  ]
 }

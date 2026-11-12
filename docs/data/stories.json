@@ -1,7 +1,59 @@
 {
- "lastUpdated": "2026-11-11",
- "briefing": "26 new items today. Top signal: “Differentially Private Statistical Inference for Rankings from Pairwise Comparisons” (8/10, Privacy of graph models & data). Busiest topic: Benchmarks & datasets (7).",
+ "lastUpdated": "2026-11-12",
+ "briefing": "5 new items today. Top signal: “Live from NODES 2026 - From Vector Search to GraphRAG: Architecting AI Systems That Actually Work - Neo4j” (5/10, Knowledge graphs & GraphRAG). Busiest topic: Knowledge graphs & GraphRAG (2).",
  "stories": [
+  {
+   "id": "5f231b78410f",
+   "title": "Building Graph-Enhanced GenAI Applications with graphrag-toolkit - KDnuggets",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdE5HVS1jR0VxUm5MVHY0QzM3RzFXZjhMWU5oMGZCODdkRUVSdDF3TVF2eERSaWRCZzg0UmRxemhOTU1lOC0xZWo4a0d3QXZxcURVX0FyOXl4ZXNhc3lET25ESDVZczRxTHBEaWM2VEJYT0E5X0o5a0MwYkxfUmh2TDY5d185WWdTR2lDbVd1RUMxcXRC?oc=5",
+   "source": "KDnuggets",
+   "authors": "",
+   "published": "2026-11-12",
+   "category": "Knowledge graphs & GraphRAG",
+   "heat": 5,
+   "summary": "Building Graph-Enhanced GenAI Applications with graphrag-toolkit KDnuggets",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "886ab1820fea",
+   "title": "Hierarchical Graph Neural Network Improves Recommendations Across Multimedia Web Sessions - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTWhlNjY4VVVGemhTU3dyQmxuV1hBblFKR1hJNmt1NmVLNXZHMG03RUkyeml0QVJkSW5ERHhzZW9ycUdkNGdfdjBLUlhZRFBOaHBRQ01JUGUzQ0VLU3JVYmxBZnc5Y2VQdloxRnExUWxoVTZJaXpabUgtTkVRaTNhT0JTb1VSWmdPZHJjMHVyMEZkSVk0elk3VW83QmQ1TERrcnptWVNzQmVueEhYY2ZWY2NpVVU?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-12",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Hierarchical Graph Neural Network Improves Recommendations Across Multimedia Web Sessions Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "86738c5a7612",
+   "title": "Graph Neural Network Models Symptom Interactions for Intelligent Acupoint Recommendation - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdWVER1RzeUR2bi1sUkZ0QjZvOWY2SERZVjVaSXhjbGh1UzFDSnF0MnllOU9iT0FodkpwMFh3c2VNbVREd2IxREhqemlhUTE5ZGk4ZVZpeThUbkU0bndGanllM25LWk1ad2VxSUNUNzA2RVdMTXFTeXZEekxOVVZSZnBXWEFOTkwtdmRKR29FZWN0Y3hoWGxGcFkyZllQZ3lDV2FMMmstTnp5b0VPS0NOVDFvMA?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-12",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Graph Neural Network Models Symptom Interactions for Intelligent Acupoint Recommendation Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "4b4dc8f0c9ed",
+   "title": "Self-Supervised Heterogeneous Graph Model Predicts Drug Target Interactions Without Manual Labels - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNDdRMWgzR0x0aE91aVY0Q0IyRlFqWGxSZ04zY1ZDZkhHQkVnejlMMzUzcnpKOE9TNjc2Y3h5Y0REZndEXy1ZY2JUOExnLUc4aWM2ejZudlpWajZMRGRrVkJ4ZE5jUzN3YXo3Qmdoc2hBRVRHVUtocWxfMmxTa1BOUHR4UjZNcU5wZXRlVkhPazMtbm5tcW9uR0tta3RYc3hXdUtRWVJabXZTVTB2X0REYm5MWUs5ZXl3Tzg3RXFQYw?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-12",
+   "category": "Relational & heterogeneous graphs",
+   "heat": 3,
+   "summary": "Self-Supervised Heterogeneous Graph Model Predicts Drug Target Interactions Without Manual Labels Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "23b51c96ca9b",
    "title": "Differentially Private Statistical Inference for Rankings from Pairwise Comparisons",
@@ -1078,6 +1130,19 @@
    "category": "Graph transformers & foundation models",
    "heat": 5,
    "summary": "SO(3) equivariant graph neural networks have become the dominant paradigm for atomistic foundation models, achieving high accuracy and data efficiency by building rotational symmetry directly into the architecture. Yet the computational cost of their higher-order tensor operations creates a tough trade-off between model accuracy and inference efficiency. In this paper, we propose a structural pruning method for SO(3)",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "14301a78d4eb",
+   "title": "Live from NODES 2026 - From Vector Search to GraphRAG: Architecting AI Systems That Actually Work - Neo4j",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdE9hZExxbVRRbVc1TzRUZ2pWSGQ5ME4ycHVoWnA3VENXQi1fcS1yTk9rWVM2aWNpejU2Y0o5Z2M1LXV2NXg1OGllTHluZE91NEZlaE5nTGltMHZ3V0dXMU5NNVpBM2ZvZTdNc2JXVV8zYmhsd093N1ZvWEt1Zl9xSUhoenBTYzlrT3pWS3l3NTYxMmpCN05mb3c0VzFlVVFOdmNJYm5uV0t6VzNEaWlNYzluVmNKcTRwS28wSg?oc=5",
+   "source": "Neo4j",
+   "authors": "",
+   "published": "2026-11-09",
+   "category": "Knowledge graphs & GraphRAG",
+   "heat": 5,
+   "summary": "Live from NODES 2026 - From Vector Search to GraphRAG: Architecting AI Systems That Actually Work Neo4j",
    "whyItMatters": "",
    "researchAngle": ""
   },
@@ -6252,6 +6317,11 @@
   "06c0788af41a",
   "4fad73adf35d",
   "b7794a71a1f0",
-  "73ed80db2b84"
+  "73ed80db2b84",
+  "14301a78d4eb",
+  "5f231b78410f",
+  "886ab1820fea",
+  "86738c5a7612",
+  "4b4dc8f0c9ed"
  ]
 }

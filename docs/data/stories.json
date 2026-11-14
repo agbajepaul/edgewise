@@ -1,7 +1,20 @@
 {
- "lastUpdated": "2026-11-13",
- "briefing": "27 new items today. Top signal: “Privacy-Preserving Range Counting over Local Graph Statistics” (8/10, Privacy of graph models & data). Busiest topic: Applications (9).",
+ "lastUpdated": "2026-11-14",
+ "briefing": "2 new items today. Top signal: “Bidirectional Graph Neural Networks Better Withstand Noise in Text-Derived Biomedical Graphs - Bioengineer.org” (3/10, Applications). Busiest topic: Applications (2).",
  "stories": [
+  {
+   "id": "b825fe97b198",
+   "title": "Bidirectional Graph Neural Networks Better Withstand Noise in Text-Derived Biomedical Graphs - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNjhEUXAtb3R3MDlJVElLYURHanNMVWs2a29ZcTFfX2JhVlA5MFdMZDYyNlctbC1iR1lVNm5uRlAwVGY0a3pYWVdYeGNZc0VIOG93QkFVUTJNODVKUWRCRlRORi1aS1lwT1RBMnR1eGZmY0FJV3N3bzN0NVFFdzZyVkF2WXBUNTBYMVk5U2Uwc0R6ZzVhaGZYQVdCVkIyMlA4MjJPRFAxNUFCU0FyN3d0ODlQeGUxQ205?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-14",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Bidirectional Graph Neural Networks Better Withstand Noise in Text-Derived Biomedical Graphs Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "b251b2bb5e1b",
    "title": "Privacy-Preserving Range Counting over Local Graph Statistics",
@@ -337,6 +350,19 @@
    "category": "Graph transformers & foundation models",
    "heat": 3,
    "summary": "Graph Transformer Model Forecasts Urban Traffic Speeds Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "8b0a23978dff",
+   "title": "Rating Systems Optimize Graph Neural Networks for Analytical Heat Simulation Limits - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYXhQWGt1cTVxYThfMHl2dGNBeGVhYU4tcW5WSmNZeVExN0k2Sk5BMW9yQXEtSlhjVml5NlRhNWptUEpJRUd6TEVmUV9aa2l0M3hLd240SmhVNl85SS0zSm9NX1kyQy1td21UQ1BHb203YVR6bXZhTDlwTG00cjBrUWpTUF9CT1A1a1VSc1A4dGFFVWZmRmYzY29zdkROZUU4OE52aVE1X3BHbDVG?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-13",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Rating Systems Optimize Graph Neural Networks for Analytical Heat Simulation Limits Bioengineer.org",
    "whyItMatters": "",
    "researchAngle": ""
   },
@@ -6700,6 +6726,8 @@
   "e31788614657",
   "b5a2dc31892a",
   "8e1cb0f98c5d",
-  "63086bce85a9"
+  "63086bce85a9",
+  "b825fe97b198",
+  "8b0a23978dff"
  ]
 }

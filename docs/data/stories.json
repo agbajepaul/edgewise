@@ -1,7 +1,20 @@
 {
- "lastUpdated": "2026-11-14",
- "briefing": "2 new items today. Top signal: “Bidirectional Graph Neural Networks Better Withstand Noise in Text-Derived Biomedical Graphs - Bioengineer.org” (3/10, Applications). Busiest topic: Applications (2).",
+ "lastUpdated": "2026-11-15",
+ "briefing": "2 new items today. Top signal: “Your Knowledge Graph Has No Memory of Past Decisions. Agentic GraphRAG Adds It - Towards Data Science” (6/10, Knowledge graphs & GraphRAG).",
  "stories": [
+  {
+   "id": "fe8d41253439",
+   "title": "Your Knowledge Graph Has No Memory of Past Decisions. Agentic GraphRAG Adds It - Towards Data Science",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTnlpYzFqWFBrTHVLU0x2N05nVUREbXN2WDlYZWszLXVNRWpXdEFTQ1AzRllwQnpsbWV1czlNWXV5Z1FyRU05MWZTM2RmOWJDMDFDZkNVcF84dkdsclJBcFB2SjM3VU1SVC1ZNHFudTR3d3NrbWQtSmhZSWNrQmJOVmxlVTFlY3hUMkhCdA?oc=5",
+   "source": "Towards Data Science",
+   "authors": "",
+   "published": "2026-11-15",
+   "category": "Knowledge graphs & GraphRAG",
+   "heat": 6,
+   "summary": "Your Knowledge Graph Has No Memory of Past Decisions. Agentic GraphRAG Adds It Towards Data Science",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "b825fe97b198",
    "title": "Bidirectional Graph Neural Networks Better Withstand Noise in Text-Derived Biomedical Graphs - Bioengineer.org",
@@ -12,6 +25,19 @@
    "category": "Applications",
    "heat": 3,
    "summary": "Bidirectional Graph Neural Networks Better Withstand Noise in Text-Derived Biomedical Graphs Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "90d72e5e31f4",
+   "title": "Dual-Graph Neural Network Improves Multi-Label Cardiovascular Diagnosis Across Twelve-Lead Electrocardiograms - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcnVaZi0wMV9BZzJaY1huRHo4eWFqOUVWaFhOeGFhc0JPeE45Sk43b0toOGJpN0k0dGR2Q2FnWDRpenc4M2tOMG9Ub1BndkZHYm14QnN6d2o1OGJxUUJvc1hPOF9ncFJEcDJhWlREdTJhcDBiVWdJRGJFdUxDWWYtLUdmdmtkTzhRYnRjQUt6QzFjOGFqTUtLclpWbVBDUlRYQm9BdEJUeEc1N0lZY04yWU1EdmlFOWNiSi1kaHhPTzVrV1hXaElRWkU3YUkweFk?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-14",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Dual-Graph Neural Network Improves Multi-Label Cardiovascular Diagnosis Across Twelve-Lead Electrocardiograms Bioengineer.org",
    "whyItMatters": "",
    "researchAngle": ""
   },
@@ -6728,6 +6754,8 @@
   "8e1cb0f98c5d",
   "63086bce85a9",
   "b825fe97b198",
-  "8b0a23978dff"
+  "8b0a23978dff",
+  "fe8d41253439",
+  "90d72e5e31f4"
  ]
 }

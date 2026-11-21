@@ -1,7 +1,59 @@
 {
- "lastUpdated": "2026-11-20",
- "briefing": "26 new items today. Top signal: “Reject and Report: Forgery-Evident Undetectable Watermarks for Generative Image Models” (7/10, Graph learning for security & privacy). Busiest topic: Architectures & theory (8).",
+ "lastUpdated": "2026-11-21",
+ "briefing": "6 new items today. Top signal: “This Week: Agent Orchestration, GraphRAG, Geospatial Knowledge Graph - Neo4j” (6/10, Knowledge graphs & GraphRAG). Busiest topic: Applications (3).",
  "stories": [
+  {
+   "id": "3329b581f477",
+   "title": "Explainable Graph Neural Network Evaluates Risk in Cross-Border Educational Data Transfers - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRml3eTV5UkdyMXJEY01GTUFxeVRDcVBFaUFfdWZ4WEdTWjZBUWdnOEFITlczWkVNWlJiWVkyajE0bVhLRm5HLTZYNnB5Nm9mbUt2X0FDakdCaHE3cWp3UlFwUWppaFVKWkFGc0xHUmVkNjBmN1ZFZHpadmgzenlmZFhNWlRKbEhiMUpMbFFSOXE0ZmFCQUZLUzhfRlVKRTRiQjZQTXhKZ2ttT0d6OWNsT3JMWndhdw?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-21",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Explainable Graph Neural Network Evaluates Risk in Cross-Border Educational Data Transfers Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "cefd53bff66a",
+   "title": "Multiband Graph Neural Network Explores Brain Connectivity in ASD-ADHD Comorbidity - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVGxRWk1VVHB3aU1HZFNUWGZ3b2pBMnJPU0ZpSTRVQjcyMWxWdGJUazFvbko2QjRfZm9wcGl3U0Q2WGdNdV9nLUZRSEd0QmVxTTg2OHdBbzB0aFU3YWlQZV82REJLQTJDd01ZeUVQT21XdTFicVE1eThOT1VtOXdqNTdtR1Q4YkU3aWdQdmRJZFpBeE9nU0lpZ0pWVWxYVjI0X0wtWlVObmxvNjA?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-21",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Multiband Graph Neural Network Explores Brain Connectivity in ASD-ADHD Comorbidity Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "3c98cfb2075a",
+   "title": "Graph Neural Network Accelerates 3D Aluminum Tensile Modeling Nearly Ten Thousandfold - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU2RxVHMyMlZ4emlIOUd0Z09XVzExeVQ1ZGNzT08tWU9QOHVia0MwMmZUY3ZMbTZNSFU0U0J6QjZjQllrY2ZIekNSU3JtQkJhbjdlUFVwZE5VUW5GTEE5bnAzNG1SeU11NTNkQnN2NGxURk9XZG5DUUVWLUZfZERRX19XMlRLVEhxbnRSMm9hRGZaZ1VHVnhjYnU3SWN0anVoRlNpS1Rwb3U2aVdBeHhJ?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-21",
+   "category": "Scalability & systems",
+   "heat": 3,
+   "summary": "Graph Neural Network Accelerates 3D Aluminum Tensile Modeling Nearly Ten Thousandfold Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "43eb5592e0bf",
+   "title": "Heterogeneous Graph Neural Networks Accurately Predict Longitudinal Middle School Performance Indicators - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSU9zYW5GX05MX3V2TXdFZk5LeWtjR1Q5RjFLUkpFMG1zYVBPODBUeGlVVVJrZURPbDRkOVBERXZJbUdnWDBwckRqSkRPck1xLS1vRXlwaEVkRDhHMXpZZ2VkZ3M3bUk0aE5BWTFPUDhwamlqbnJSVzlsbjU1NDNZbFdGdGk3YUFkT284eGJ0QXRrUDlOaWppN1Y3cVI2UGY1U2JTR3VGdWxHbHVGWFZDY3hTZmJnQ1NSRVFmS1l5WDJaYjZ0ZjRTVA?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-21",
+   "category": "Relational & heterogeneous graphs",
+   "heat": 3,
+   "summary": "Heterogeneous Graph Neural Networks Accurately Predict Longitudinal Middle School Performance Indicators Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "7dc0b6c01456",
    "title": "Reject and Report: Forgery-Evident Undetectable Watermarks for Generative Image Models",
@@ -25,6 +77,19 @@
    "category": "Attacks on graph models",
    "heat": 6,
    "summary": "The lack of built-in security in controller area networks (CANs) exposes modern vehicles and industrial systems to masquerade attacks that can compromise safety and reliability. These attacks inject malicious messages that mimic legitimate communication patterns, making them difficult to detect using existing intrusion detection systems (IDS). Prior graph-based IDS approaches often rely on shallow embeddings that dec",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "f428968ab5a0",
+   "title": "This Week: Agent Orchestration, GraphRAG, Geospatial Knowledge Graph - Neo4j",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWDJVai1QVGFTa1BKR2RXNUt3c19laEIwMDN2TlZSbmhSeGYza1dMSUhHT0l5SHQ2YWJzajZBdkR4dC01NndWaTlmdl9aa1dpZC0yTlFDSUdLMXNUWFlpM3pZUmZEN1VTNi1ETlBSa2puUjZTaUhrb0hGYWdCOEk3TGZ0Q09pQ2NnQVVTa2tHYURTNFBK?oc=5",
+   "source": "Neo4j",
+   "authors": "",
+   "published": "2026-11-20",
+   "category": "Knowledge graphs & GraphRAG",
+   "heat": 6,
+   "summary": "This Week: Agent Orchestration, GraphRAG, Geospatial Knowledge Graph Neo4j",
    "whyItMatters": "",
    "researchAngle": ""
   },
@@ -272,6 +337,19 @@
    "category": "Applications",
    "heat": 3,
    "summary": "Graph Neural Networks Optimize Personalized English Learning Path Planning With High Accuracy Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
+  {
+   "id": "2ee87cf21edf",
+   "title": "Multitask Graph Neural Networks Predict Elastoplastic Behavior in Dual-Phase Polycrystals - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaDNBeC1mNHB1STV5d252bWRkSGM1elpPRVRDRWFEME53aUxMdE9FS1Q5LTlDdjAydV9QQ2w0RHY1TG5fazNFWHcyQ0RYYUZKWjZ2Q0p1RWZSaWU0WjBjRGM2TmJhUUZBVXdVaThGT3Nlakh6N0NMeHhjREtoVWhmdWdDWnk1ZVdpZXpZWGhYV3I1UkZqTkVDVmFuSkJabHRFTzFlNDRNQ3ZyYkh4bDktZ3NTenc?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-20",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Multitask Graph Neural Networks Predict Elastoplastic Behavior in Dual-Phase Polycrystals Bioengineer.org",
    "whyItMatters": "",
    "researchAngle": ""
   },
@@ -8422,6 +8500,12 @@
   "d5e23cda0176",
   "b9e6ff3bd7e2",
   "9160312fc8e7",
-  "4454c68c832d"
+  "4454c68c832d",
+  "f428968ab5a0",
+  "3329b581f477",
+  "cefd53bff66a",
+  "3c98cfb2075a",
+  "2ee87cf21edf",
+  "43eb5592e0bf"
  ]
 }

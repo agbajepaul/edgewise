@@ -1,7 +1,20 @@
 {
- "lastUpdated": "2026-11-26",
- "briefing": "26 new items today. Top signal: “Node Differential Privacy via Node-Stable Graph Projections” (9/10, Privacy of graph models & data). Busiest topic: Applications (10).",
+ "lastUpdated": "2026-11-27",
+ "briefing": "1 new item today. Top signal: “Dual-Branch Graph Neural Network Recognizes River Network Patterns With 93 Percent Accuracy - Bioengineer.org” (3/10, Applications).",
  "stories": [
+  {
+   "id": "8ccbd720fc61",
+   "title": "Dual-Branch Graph Neural Network Recognizes River Network Patterns With 93 Percent Accuracy - Bioengineer.org",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV0Q1SEpYaWVXZ2l0NlRmMWRNXzNsUEVPMU5vVHljNTNVMmJobzhSa3BKVEtFdnRIMUotbXNOTHN3Y25Sc19iZDFNSEh4V0lIcm92VHBDTUV4YTVaSDlRSHNGWHVfMTkteS1WN1VNU0dvcmlJNDVlY3c0bDdSTEZoNVhvNVY3OWZoTEk3NFVQMjI4RXBOSWlZa0kyeE9NNHU3aDh1c3FPVXJLWVd2eGxDM0hWaFhlcDQ?oc=5",
+   "source": "Bioengineer.org",
+   "authors": "",
+   "published": "2026-11-27",
+   "category": "Applications",
+   "heat": 3,
+   "summary": "Dual-Branch Graph Neural Network Recognizes River Network Patterns With 93 Percent Accuracy Bioengineer.org",
+   "whyItMatters": "",
+   "researchAngle": ""
+  },
   {
    "id": "f80f81a274aa",
    "title": "Node Differential Privacy via Node-Stable Graph Projections",
@@ -9766,6 +9779,7 @@
   "4ddf7ddcb752",
   "53fe969fa9f3",
   "1967c2a35a28",
-  "9e0f6ba632d8"
+  "9e0f6ba632d8",
+  "8ccbd720fc61"
  ]
 }
